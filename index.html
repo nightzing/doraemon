@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta charset="utf-8">
+    <title>2048 私人定制</title>
+    <link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/Doraemon.css" />
+    <link rel="stylesheet" type="text/css" href="./css/Doraemon_bg.css" />
+    <script type="text/javascript" src="./libs/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="./libs/hammer.min.js"></script>
+    <script type="text/javascript" src="./js/supportDoraemon.js"></script>
+    <script type="text/javascript" src="./js/showanimationDoraemon.js"></script>
+    <script type="text/javascript" src="./js/mainDoraemon.js"></script>
+</head>
+<body>
+    <header class="header">
+        <h1>伴我同行</h1>
+        <a href="javascript:newGame();" class="newGameButton"><div href="javascript:;" class="btn-text">New Game</div></a>
+        <p><span class="glyphicon glyphicon-bookmark"></span>积分 : <span id="score">0</span></p>
+    </header>
+    <div id="grid-container"></div>
+
+<!--多啦A梦 背景 -->
+  <div class="doraermon_ls">
+		<!-- 头部和脸的CSS3代码 -->
+		<div class="head">
+			<div class="eyes">
+				<div class="eye left">
+					<div class="black bleft"></div>
+				</div>
+				<div class="eye right">
+					<div class="black bright"></div>
+				</div>
+			</div>
+			<div class="face">
+				<div class="white"></div>
+				<div class="nose">
+					<div class="light"></div>
+				</div>
+				<div class="nose_line"></div>
+				<div class="mouth"></div>
+				<div class="whiskers">
+					<div class="whisker rTop r160"></div>
+					<div class="whisker rt"></div>
+					<div class="whisker rBottom r20"></div>
+					<div class="whisker lTop r20"></div>
+					<div class="whisker lt"></div>
+					<div class="whisker lBottom r160"></div>
+				</div>
+			</div>
+		</div>
+		<!-- 脖子和铃铛的代码 -->
+		<div class="choker">
+			<div class="bell">
+				<div class="bell_line"></div>
+				<div class="bell_circle"></div>
+				<div class="bell_under"></div>
+				<div class="bell_light"></div>
+			</div>
+		</div>
+		<div class="bodys">
+			<div class="body"></div>
+			<div class="wraps"></div>
+			<div class="pocket"></div>
+			<div class="pocket_mask"></div>
+		</div>
+		<div class="hand_right">
+			<div class="arm"></div>
+			<div class="circle"></div>
+			<div class="arm_rewrite"></div>
+		</div>
+		<div class="hand_left">
+			<div class="arm"></div>
+			<div class="circle"></div>
+			<div class="arm_rewrite"></div>
+		</div>
+		<div class="foot">
+			<div class="left"></div>
+			<div class="right"></div>
+			<div class="foot_rewrite"></div>
+		</div>
+	</div>
+  <!--  -->
+  <div class="doraermon_rs">
+    <!-- 头部和脸的CSS3代码 -->
+    <div class="head">
+      <div class="eyes">
+        <div class="eye left">
+          <div class="black bleft"></div>
+        </div>
+        <div class="eye right">
+          <div class="black bright"></div>
+        </div>
+      </div>
+      <div class="face">
+        <div class="white"></div>
+        <div class="nose">
+          <div class="light"></div>
+        </div>
+        <div class="nose_line"></div>
+        <div class="mouth"></div>
+        <div class="whiskers">
+          <div class="whisker rTop r160"></div>
+          <div class="whisker rt"></div>
+          <div class="whisker rBottom r20"></div>
+          <div class="whisker lTop r20"></div>
+          <div class="whisker lt"></div>
+          <div class="whisker lBottom r160"></div>
+        </div>
+      </div>
+    </div>
+    <!-- 脖子和铃铛的代码 -->
+    <div class="choker">
+      <div class="bell">
+        <div class="bell_line"></div>
+        <div class="bell_circle"></div>
+        <div class="bell_under"></div>
+        <div class="bell_light"></div>
+      </div>
+    </div>
+    <div class="bodys">
+      <div class="body"></div>
+      <div class="wraps"></div>
+      <div class="pocket"></div>
+      <div class="pocket_mask"></div>
+    </div>
+    <div class="hand_right">
+      <div class="arm"></div>
+      <div class="circle"></div>
+      <div class="arm_rewrite"></div>
+    </div>
+    <div class="hand_left">
+      <div class="arm"></div>
+      <div class="circle"></div>
+      <div class="arm_rewrite"></div>
+    </div>
+    <div class="foot">
+      <div class="left"></div>
+      <div class="right"></div>
+      <div class="foot_rewrite"></div>
+    </div>
+  </div>
+
+</body>
+</html>

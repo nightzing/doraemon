@@ -1,0 +1,107 @@
+/**
+ * Created by XiaoBo on 16-4-11.
+ */
+
+body {
+    font-family:Arial;
+    overflow: hidden;
+    background: url("http://img5.imgtn.bdimg.com/it/u=642517107,3017148734&fm=21&gp=0.jpg");
+}
+h1,p,body {
+    margin: 0;
+    padding:0;
+}
+
+.header{
+    width: 100%;
+    display:block;
+    text-align:center;
+    overflow: hidden;
+}
+
+.header h1{
+    font-size: 1.8rem;
+    font-weight:bold;
+    font-family: sans-serif;
+    color: #26afc7;
+}
+.glyphicon-bookmark{
+  margin-right: .5rem;
+  color: #20c3ab;
+  line-height: 1rem;
+}
+.newGameButton{
+    width : 6em;
+    margin: 0 auto;
+    display: block;
+    background-color: #f3fff6;
+    color:#00a0e9;
+    border: 1px solid #00a0e9;
+    text-decoration: none;
+    font-size: 1em;
+    border-radius: 5px;
+    transition-duration: .8s;
+    transition-property: background;
+    transform: translateZ(0);
+}
+.newGameButton:hover{
+  background-color: #00a0e9;
+  color:white;
+  border: 1px solid #00a0e9;
+}
+/* 按钮文字点击动画 */
+.btn-info{
+  animation: swing linear fowards 2s;
+  -webkit-animation: swing linear fowards 2s;
+}
+@-webkit-keyframes swing{
+  0%{ transform:rotate(0deg)}
+  5%{ transform:rotate(10deg)}
+  10%{ transform:rotate(-10deg)}
+  15%{ transform:rotate(7deg)}
+  20%{ transform:rotate(-7deg)}
+  25%{ transform:rotate(4deg)}
+  30%{ transform:rotate(-4deg)}
+  70%{ transform:rotate(0deg)}
+  100%{ transform:rotate(0deg);}
+}
+/* 外层容器 */
+#grid-container{
+    background-color: #00a0e9;
+    margin: 0 auto;
+    border-radius: 10px;
+    position: relative;
+    z-index: 9999;
+}
+/* 小格子 */
+.grid-cell {
+    background-color: #15c5ec;
+}
+
+.grid-cell,.number-cell{
+    border-radius: 6px;
+    position: absolute;
+}
+
+.number-cell{
+    overflow: hidden;
+    font-weight:bold;
+    text-align:center;
+}
+
+#over {
+    position: absolute;
+    text-align: center;
+    background-color: white;
+    z-index: 10;
+    opacity: 0.7;
+    filter:alpha(opacity=70);
+    width:100%;
+    height: 100%;
+    line-height: 1.5em;
+}
+
+#over p {
+    padding-top: 30%;
+    color : red;
+}
